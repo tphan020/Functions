@@ -10,10 +10,14 @@ class LinkedList {
 		LinkedList();
 		LinkedList(int data);
 		void print();
-		void insert(int value);
+		void append(int value);
 		void remove(int value);
+		int size();
+		void reverse();
+		void find(int value);
 	private:
 		int data;
+		LinkedList *head;
 		LinkedList *next;
 
 };
